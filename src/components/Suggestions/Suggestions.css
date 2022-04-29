@@ -1,0 +1,59 @@
+.suggestions {
+  position: sticky;
+  top: 100px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.suggestions .userSwitch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.suggestions .userSwitch .userSwitchAvatar {
+  margin-right: 15px;
+}
+.suggestions .userSwitch .userSwitchAvatar img {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+.suggestions .userSwitch .userSwitchName {
+  display: flex;
+  flex-direction: column;
+}
+.suggestions .userSwitch .userSwitchName span {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+.suggestions .userSwitch .userSwitchName span:first-child {
+  font-weight: 600;
+  color: #252525;
+}
+.suggestions .userSwitch button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+}
+.suggestions .suggestionUsers {
+  display: flex;
+  flex-direction: column;
+}
+.suggestions .suggestionUsers .suggestionUsersHeader {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+}
+.suggestions .suggestionUsers .suggestionUsersHeader span {
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: 600;
+}
+.suggestions .suggestionUsers .suggestionUsersHeader span:last-child {
+  margin-left: auto;
+  color: #262626;
+  font-size: 12px;
+}

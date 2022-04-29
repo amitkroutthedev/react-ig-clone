@@ -1,0 +1,27 @@
+body {
+  overflow-y: hidden;
+}
+body .direct {
+  max-width: 975px;
+  max-height: 600px;
+  margin: 20px auto 0px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: white;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  body .direct {
+    margin: 0px auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  body .direct .lastMessagesCol {
+    flex: 1;
+  }
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  body .direct .newMessage {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.exploreBigRowCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.exploreBigRowCards .exploreSmallCards {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 30px;
+}
+
+.exploreBigRowCards .exploreSmallCards .exploreSmallItem {
+  display: flex;
+}
+.exploreBigRowCards .exploreSmallCards .exploreSmallItem img {
+  width: 100%;
+}
+.exploreBigRowCards .exploreBigCard {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+}
+.exploreBigRowCards .exploreBigCard .exploreBigCardItem {
+  display: flex;
+}
+.exploreBigRowCards .exploreBigCard .exploreBigCardItem img {
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .exploreBigRowCards {
+    grid-column-gap: 5px;
+    margin-bottom: 5px;
+  }
+  .exploreBigRowCards .exploreSmallCards {
+    grid-row-gap: 5px;
+  }
+}

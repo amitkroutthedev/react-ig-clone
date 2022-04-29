@@ -1,0 +1,46 @@
+body {
+  overflow-y: hidden;
+}
+body .chat {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+  position: relative;
+}
+body .chat .chatHeader {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+}
+body .chat .chatHeader .chatHeaderAvatar {
+  margin: 0px 18px;
+}
+body .chat .chatHeader .chatHeaderAvatar img {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+body .chat .chatHeader .chatHeaderUsername {
+  font-size: 18px;
+  color: #262626;
+  font-weight: 600;
+}
+body .chat .chatHeader svg {
+  margin: 18px 18px 18px auto;
+}
+body .chat .chatMessages {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  body .chat {
+    flex: 1;
+  }
+}

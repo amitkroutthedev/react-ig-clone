@@ -1,0 +1,149 @@
+.profile {
+  max-width: 975px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.profile .profileHeaderRow {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 10px 0px;
+}
+
+.profile .profileHeaderRow .profilePhotoCol {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile .profileHeaderRow .profilePhotoCol img {
+  border-radius: 50%;
+  width: 100%;
+}
+.profile .profileHeaderRow .profileContentCol {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.profile .profileHeaderRow .profileContentCol .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profile .profileHeaderRow .profileContentCol .title .username {
+  font-size: 28px;
+  font-weight: 300;
+  color: #262626;
+  margin-right: 20px;
+}
+.profile .profileHeaderRow .profileContentCol .title .editProfile {
+  font-size: 14px;
+  color: #262626;
+  font-weight: 500;
+  padding: 5px 9px;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  margin-right: 10px;
+}
+.profile .profileHeaderRow .profileContentCol .title .settings svg {
+  width: 24px;
+  height: 24px;
+}
+.profile .profileHeaderRow .profileContentCol .counter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  color: #262626;
+}
+
+.profile .profileHeaderRow .profileContentCol .counter div {
+  margin-right: 40px;
+}
+.profile .profileHeaderRow .profileContentCol .counter div span {
+  font-weight: 600;
+}
+.profile .profileHeaderRow .profileContentCol .biographyRow {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #262626;
+}
+
+.profile .profileHeaderRow .profileContentCol .biographyRow .displayName {
+  font-weight: 600;
+}
+.profile .profileTabs {
+  width: 100%;
+  margin: 40px auto 0px;
+  display: flex;
+  flex-direction: row;
+}
+.profile .profileTabs .tabItem {
+  flex: 0.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 0px;
+  color: #8e8e8e;
+  font-weight: 600;
+  line-height: 0px;
+}
+
+.profile .profileTabs .tabItem:hover {
+  cursor: pointer;
+}
+.profile .profileTabs .tabItem svg {
+  margin-right: 5px;
+  width: 12px;
+  fill: #8e8e8e;
+}
+
+.profile .profileTabs .tabItem.active {
+  border-top: 1px solid #262626;
+  color: #262626;
+}
+.profile .profileTabs .tabItem.active svg {
+  width: 12px;
+  fill: #262626;
+}
+@media (max-width: 500px) {
+  .profile {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .profile .profileHeaderRow {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .profile .profileHeaderRow .profileContentCol .counter {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .profile .profileHeaderRow .profileContentCol .biographyRow {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .profile .profileTabs .tabItem span {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .profile .profileTabs .tabItem svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .profile .profileTabs .tabItem.active svg {
+    width: 24px;
+    height: 24px;
+  }
+}

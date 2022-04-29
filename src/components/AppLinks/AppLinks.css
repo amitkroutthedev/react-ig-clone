@@ -1,0 +1,21 @@
+.appLinks {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.appLinks span {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.appLinks div {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1;
+}
+.appLinks img {
+  width: 40%;
+}

@@ -1,0 +1,161 @@
+nav {
+  position: sticky;
+  z-index: 1000;
+  top: 0px;
+  background-color: white;
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px solid #dbdbdb;
+}
+nav .navbar {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  max-width: 975px;
+  margin: 0px auto;
+}
+nav .navbar .navLogo {
+  flex: 0.4;
+  margin-left: 10px;
+}
+nav .navbar .navSearchInput {
+  flex: 0.2;
+  position: relative;
+  background-color: #fafafa;
+}
+nav .navbar .navSearchInput.labelHide label {
+  display: none;
+}
+nav .navbar .navSearchInput label {
+  position: absolute;
+  top: 0px;
+  padding: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  font-size: 14px;
+  color: #dbdbdb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  nav .navbar .navSearchInput label {
+    display: none;
+  }
+}
+nav .navbar .navSearchInput input {
+  width: 100%;
+  padding: 3px;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  outline: none;
+  background-color: transparent;
+}
+nav .navbar .navSearchInput input:focus + label {
+  left: 0;
+  transform: translateX(0);
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  nav .navbar .navSearchInput input {
+    display: none;
+  }
+}
+nav .navbar .navMenu {
+  flex: 0.4;
+  display: flex;
+  justify-content: flex-end;
+}
+nav .navbar .navMenu a {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  nav .navbar .navMenu a:not(:nth-child(2)) {
+    display: none;
+  }
+}
+nav .navbar .navMenu svg {
+  margin-left: 22px;
+}
+nav .navbar .navMenu .heart {
+  position: relative;
+}
+@media (max-width: 500px) {
+  nav .navbar .navMenu .heart {
+    display: none;
+  }
+}
+nav .navbar .navMenu .closePanel {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: transparent;
+}
+nav .navbar .navMenu .closePanel.active {
+  display: block;
+}
+nav .navbar .navMenu .navProfilePhoto {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  nav .navbar .navMenu .navProfilePhoto {
+    display: none;
+  }
+}
+nav .navbar .navMenu .navProfilePhoto img {
+  margin-left: 22px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 1px solid;
+}
+nav .navbar .navMenu .navProfilePhoto .navProfilPhotoMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  right: -15px;
+  background-color: white;
+  box-shadow: 0 0 2px gray;
+  border-radius: 8px;
+  width: 230px;
+}
+nav .navbar .navMenu .navProfilePhoto .navProfilPhotoMenu.arrow-top {
+  margin-top: 10px;
+}
+nav .navbar .navMenu .navProfilePhoto .navProfilPhotoMenu.arrow-top:after {
+  content: " ";
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  border-top: none;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+nav .navbar .navMenu .navProfilePhoto .navProfilPhotoMenu .menuItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .navbar .navMenu .navProfilePhoto .navProfilPhotoMenu .menuItem:hover {
+  background-color: #efefef;
+}
+nav .navbar .navMenu .navProfilePhoto .navProfilPhotoMenu .menuItem svg {
+  margin: 10px 15px;
+  fill: black;
+}
+nav .navbar .navMenu .navProfilePhoto .navProfilPhotoMenu .menuItem:last-child {
+  padding: 5px 15px;
+}

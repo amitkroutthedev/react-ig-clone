@@ -1,0 +1,129 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 40px;
+}
+.post .postHeader {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+}
+.post .postHeader .postUserImage {
+  margin: 10px;
+}
+.post .postHeader .postUserImage img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.post .postHeader .postUsername {
+  flex: 1;
+}
+.post .postHeader .postUsername span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+.post .postHeader .headerMore {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.post .postImage img {
+  width: 100%;
+  height: 100%;
+}
+.post .postContent {
+  display: flex;
+  flex-direction: column;
+}
+.post .postContent .postActions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0px 10px;
+}
+.post .postContent .postActions div {
+  padding: 8px;
+}
+.post .postContent .postActions div:nth-child(4) {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.post .postContent .postActions div:nth-child(4) svg {
+  height: 22px;
+  width: 22px;
+}
+.post .postContent .postRecentLiked {
+  font-size: 14px;
+  color: #262626;
+  margin: 0px 15px;
+}
+.post .postContent .postRecentLiked span {
+  font-weight: 600;
+}
+.post .postContent .postDescription {
+  margin: 0px 15px;
+}
+.post .postContent .postDescription span {
+  font-size: 14px;
+  color: #262626;
+}
+.post .postContent .postDescription span:nth-child(1) {
+  font-weight: 600;
+}
+.post .postContent .postComments {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+}
+.post .postContent .postComments .postCommentsMoreCount {
+  font-size: 16px;
+  color: #8e8e8e;
+}
+.post .postContent .postComments .postComment {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.post .postContent .postComments .postComment span {
+  color: #262626;
+}
+.post .postContent .postComments .postComment span:nth-child(1) {
+  font-weight: 600;
+}
+.post .postContent .postComments .postComment svg {
+  height: 12px;
+  width: 12px;
+  margin-left: auto;
+}
+.post .postContent .postDate {
+  margin: 0px 15px;
+}
+.post .postContent .postDate span {
+  color: #8e8e8e;
+  font-size: 10px;
+}
+.post .postContent .postCommentInput {
+  margin: 5px 15px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.post .postContent .postCommentInput svg {
+  margin-right: 15px;
+}
+.post .postContent .postCommentInput input {
+  flex: 1;
+  outline: none;
+  border: none;
+}
+.post .postContent .postCommentInput button {
+  background-color: transparent;
+  color: #0f9bf7;
+  outline: none;
+  border: none;
+}
